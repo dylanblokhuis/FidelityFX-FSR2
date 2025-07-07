@@ -22,6 +22,9 @@
 cmake_minimum_required(VERSION 3.15)
 set(CMAKE_DEBUG_POSTFIX d)
 
+set( CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -fPIC" )
+set( CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -fPIC" )
+
 option (FFX_FSR2_API_DX12 "Build FSR 2.0 DX12 backend" ON)
 option (FFX_FSR2_API_VK "Build FSR 2.0 Vulkan backend" ON)
 
